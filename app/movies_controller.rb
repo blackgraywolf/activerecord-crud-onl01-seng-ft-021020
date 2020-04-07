@@ -21,7 +21,7 @@ def can_be_created_in_a_block
     m.title = "Home Alone"
     
      m.release_date = 1990
-     binding.pry
+    # binding.pry
   end
 end
 

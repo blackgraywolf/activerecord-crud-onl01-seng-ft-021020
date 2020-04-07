@@ -1,3 +1,4 @@
+require 'pry'
 def can_be_instantiated_and_then_saved
   movie = Movie.new
   movie.title = "This is a title."
@@ -18,6 +19,7 @@ end
 def can_be_created_in_a_block
   Movie.create do |m|
     m.title = "Home Alone"
+    binding.pry
     # m.release_date = 1990
   end
 end

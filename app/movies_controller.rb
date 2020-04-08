@@ -18,9 +18,7 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-     m.{ id: nil, title: "Home Alone", release_date: 1990, director: nil,
- lead: nil,
- in_theaters: nil}
+     m.{ title: "Home Alone", release_date: 1990}
   
     # binding.pry
   end

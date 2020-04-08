@@ -1,5 +1,4 @@
 require 'pry'
-require_relative '../config/environment'
 def can_be_instantiated_and_then_saved
   movie = Movie.new
   movie.title = "This is a title."
@@ -16,11 +15,12 @@ def can_be_created_with_a_hash_of_attributes
   }
   movie = Movie.create(attributes)
 end
-def can_be_created_in_a_block(args = { title: "Home Alone", release_date: 1990 })
-# def can_be_created_in_a_block
+
+def can_be_created_in_a_block
   Movie.create do |m|
-    m = args
-  # binding.pry
+    # m.title = "Home Alone"
+     m.release_date = 1990
+    binding.pry
   end
 end
 

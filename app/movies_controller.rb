@@ -18,18 +18,14 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-     m.{ title: "Home Alone", release_date: 1990,  director: nil,
+     m.{ id: nil, title: "Home Alone", release_date: 1990, director: nil,
  lead: nil,
- in_theaters: nil }
-   
-     id: nil,
- title: "Home Alone",
- release_date: 1990,
->
-    binding.pry
+ in_theaters: nil}
+  
+    # binding.pry
   end
 end
-# 
+
 def can_get_the_first_item_in_the_database
   Movie.first.title
 end

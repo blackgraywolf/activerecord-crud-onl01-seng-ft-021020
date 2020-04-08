@@ -18,7 +18,7 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-     m =.{ title: "Home Alone", release_date: 1990}
+     m = { title: "Home Alone", release_date: 1990}
   
     # binding.pry
   end
